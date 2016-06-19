@@ -1,9 +1,9 @@
 var docpadConfig = {
-	documentPaths: ['render/blog/posts'],
+	documentPaths: ['render/pwblog/posts'],
 
 	templateData: {
 		site: {
-			url: "http://play-well.org/blog",
+			url: "http://play-well.org/pwblog",
 			title: "Play-Well TEKnologies Blog",
 			subtitle: "Teaching Engineering to Kids",
 			author: "Play-Well TEKnologies",
