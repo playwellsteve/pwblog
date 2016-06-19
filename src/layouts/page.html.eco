@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<article id="page" class="page">
+	<div class="row">
+	 	<%- @content %>
+	 </div>
+</article>

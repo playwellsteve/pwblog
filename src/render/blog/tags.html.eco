@@ -1,0 +1,18 @@
+---
+layout: 'default'
+title: 'Posts by Tag'
+type: 'page'
+date: '2016-06-01'
+---
+<article>
+	<h2>Posts by Category</h2>
+	<ul>
+		<%for file in @getFilesAtPath('tags/', { title:1}).toJSON(): %>
+			<li>
+				<a href="<%= file.url %>" id="<%= file.title.replace('Tag: ', '') %>">
+					<%= file.title.replace('Tag: ', '') %>
+				</a>
+			</li>
+		<% end %>
+	</ul>
+</article>

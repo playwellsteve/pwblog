@@ -1,0 +1,53 @@
+---
+layout: "default"
+isPaged: true
+pagedCollection: 'posts'
+pageSize: 2
+---
+
+<header class="main-header">
+	<h1><%= @site.title %></h1>
+	<!-- <p>We're totally going to put a cool picture here</p> -->
+</header>
+
+<br />
+<br />
+
+<main id="content" class="content">
+	<!-- <h1>List of Posts</h1> -->
+	<% for post in @getPageCollection("posts").toJSON(): %>
+		<h2 class="post-title"><a href="<%= post.url %>"><%- post.title %></a></h2>
+		<%- post.contentRenderedWithoutLayouts %>
+		<hr />
+
+	<% end %>
+
+</main>
+
+<div class="pagination-nav post">
+	<ul class="pager">
+		<!-- Prev page button -->
+		<% unless @hasPrevPage(): %>
+			<li class="disabled previous"><span>Prev</span></li>
+		<% else: %>
+			<li class="previous"><a href="<%= @getPrevPage() %>">Prev</a></li>
+		<% end %>
+
+		<!-- Page Number Buttons -->
+        <% for pageNumber in [0..@document.page.count-1]: %>
+            <% if @document.page.number is pageNumber: %>
+                <li class="active"><span><%= pageNumber + 1 %></span></li>
+            <% else: %>
+                <li><a href="<%= @getPagedUrl(pageNumber) %>"><%= pageNumber + 1 %></a></li>
+            <% end %>
+        <% end %>
+		
+
+		<!--  Next page button -->
+		<% unless @hasNextPage(): %>
+			<li class="disabled next"><span>Next</span></li>
+		<% else: %>
+			<li class="next"><a href="<%= @getNextPage() %>">Next</a></li>
+		<% end %>
+	</ul>
+</div>

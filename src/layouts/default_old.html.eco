@@ -1,0 +1,29 @@
+<html>
+<head>
+<title><%= @getPreparedTitle() %></title>
+<meta name="description" content="<%= this.getPreparedDescription() %>"/>
+<meta name="keywords" content="<%= this.getPreparedKeywords() %>"/>
+<body>
+   <header>
+   	<nav>
+   		<ul>
+   			<li><a href="/"><%= @site.title %></a></li>
+   			<li><a href="/about.html">About Us</a></li>
+   		</ul>
+   	</nav>
+   </header>
+   <%- @content %>
+
+   <div id="tag-list" class="widget">
+   		<h3>Tags</h3>
+   		<ul>
+   		<%for file in @getFilesAtPath('tags/', {title:1}).toJSON(): %>
+		<li>
+			<a href="<%= file.url %>" id="<%= file.title.replace('Tag: ', '') %>">
+				<%= file.title.replace('Tag: ', '') %>
+			</a>
+		</li>
+	<% end %>
+   </div>
+</body>
+</html>

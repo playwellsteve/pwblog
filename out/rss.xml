@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Play-Well TEKnologies Blog]]></title>
+        <description><![CDATA[We blog about anything that we think is cool.]]></description>
+        <link>http://play-well.org/blog</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sun, 19 Jun 2016 18:22:31 GMT</lastBuildDate>
+        <atom:link href="http://play-well.org/blog/rss.xml" rel="self" type="application/rss+xml"/>
+        <author><![CDATA[Play-Well TEKnologies]]></author>
+        <pubDate>Sun, 19 Jun 2016 14:45:19 GMT</pubDate>
+        <item>
+            <title><![CDATA[Video Test]]></title>
+            <description><![CDATA[<h3 id="test-of-html-5-video">Test of HTML 5 Video</h3>
+<video controls poster="http://vjs.zencdn.net/v/oceans.png" style="width: 100%">
+    <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+</video>]]></description>
+            <link>http://play-well.org/blog/blog/posts/video-test.html</link>
+            <guid isPermaLink="true">http://play-well.org/blog/blog/posts/video-test.html</guid>
+            <dc:creator><![CDATA[Play-Well TEKnologies]]></dc:creator>
+            <pubDate>Sun, 19 Jun 2016 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Another Post]]></title>
+            <description><![CDATA[<h2 id="more-features">More Features</h2>
+<p>We are testing additional features, such as paging.</p>
+]]></description>
+            <link>http://play-well.org/blog/blog/posts/third-post.html</link>
+            <guid isPermaLink="true">http://play-well.org/blog/blog/posts/third-post.html</guid>
+            <dc:creator><![CDATA[Play-Well TEKnologies]]></dc:creator>
+            <pubDate>Sat, 18 Jun 2016 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Second Post]]></title>
+            <description><![CDATA[<h2 id="on-the-move">On the Move</h2>
+<p>Wow! We are rolling with multiple posts.</p>
+]]></description>
+            <link>http://play-well.org/blog/blog/posts/second-post.html</link>
+            <guid isPermaLink="true">http://play-well.org/blog/blog/posts/second-post.html</guid>
+            <dc:creator><![CDATA[Play-Well TEKnologies]]></dc:creator>
+            <pubDate>Sat, 18 Jun 2016 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Our Cool Blog]]></title>
+            <description><![CDATA[<h2 id="welcome-">Welcome!</h2>
+<p>Welcome to our cool blog.</p>
+]]></description>
+            <link>http://play-well.org/blog/blog/posts/blog-post01.html</link>
+            <guid isPermaLink="true">http://play-well.org/blog/blog/posts/blog-post01.html</guid>
+            <dc:creator><![CDATA[Play-Well TEKnologies]]></dc:creator>
+            <pubDate>Fri, 17 Jun 2016 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
